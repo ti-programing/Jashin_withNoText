@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>-『邪神の入学式』エンディングブック-</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="index.css">
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <div id="outer">
+    <header>
+        <div id="logo">-『邪神の入学式』エンディングブック-</div>
+    </header>
+
+        <div id="content">
+
+        <main id="main">
+            <div id ="index">
+                <div id="intro">
+                    <h1>＜はじめに＞</h1>
+                    <p>GMまたは進行役が、エンディングの処理を行います。</p>
+                    <p>GMが処理する場合は、プレイヤーにエンディングブック（以下、本ブック）を見せず、結果のみを提示すればよいでしょう。</p>
+                    <p>進行役が処理する場合は、画面共有を行い、エンディング処理～結果までの流れを全員で確認することをおすすめします。</p>
+                    <p>なお、本ブックはブラウザの「戻る」ボタンに対応していません。戻りたい場合はページ下部の「戻る」ボタンをご活用ください。</p>
+                    <p>また、再読み込みを行うことで、状態をリセットしトップページ（今表示されている画面）に戻ることができます。</p>
+                    <br>
+                    <p>◆具体的な手順は以下の通りです。</p>
+
+                    <ul>
+                        <li>①進行役が本ブックを<span class="red">画面共有する。</span>（GM処理の場合は不要）</li>
+                        <li>②本ブック下部の、<span class="red">「ゲーム結果入力フォーム」の入力を行う。</span><br>
+                            入力ミスがないことを確認し、本ブック最下部の<span class="red">「エンディングに進む」をクリックする。</span><br>
+                            入力内容に応じたエンディングテキストが表示される。</li>
+                        <br>
+                        <p>※ぜひ、RPを楽しみながら読み上げを行ってください。</p>
+                        <p>※エンディングは三章構成になっており、<span class="red">章が進むごとにページ下部の「進む」をクリックする必要があります。</span></p>
+                    </ul>
+                </div>
+
+
+                <div id="forms">
+                    <h1>＜ゲーム結果入力フォーム＞</h1>
+                    <p class="red">※「生死」の項目は、現在の状態を入力してください。</p>
+                    <p class="red">　途中の生死は考慮しません。</p>
+
+                    <div class="form">
+                        <div class="nameLabel">〇PC1_花見蓮</div>
+                        <div class="life">
+                            <span class ="Qlabel">生死</span>
+                            <select id="l1">
+                                <option hidden>--選択してください--</option>
+                                <option>生存</option>
+                                <option>死亡</option>
+                            </select>
+                        </div>
+                        <div class="vote">
+                            <span class ="Qlabel">投票</span>
+                            <select id="v1">
+                                <option hidden>--選択してください--</option>
+                                <option>花見</option>
+                                <option>鳥見</option>
+                                <option>風見</option>
+                                <option>月見</option>
+                                <option>校長</option>
+                                <option>生徒Ａ</option>
+                            </select>
+                        </div>
+                        <div class="faith">
+                            <span class ="Qlabel">崇拝</span>
+                            <select id="f1">
+                                <option hidden>--選択してください--</option>
+                                <option>鳥見</option>
+                                <option>風見</option>
+                                <option>月見</option>
+                                <option>校長</option>
+                                <option>生徒Ａ</option>
+                                <option>無信仰</option>
+                            </select>
+                        </div>
+                        <div class="holy">
+                            <span class ="Qlabel">聖水</span>
+                            <select id="h1">
+                                <option hidden>--選択してください--</option>
+                                <option>飲んだ</option>
+                                <option>飲んでいない</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form">
+                        <div class="nameLabel">〇PC2_鳥見徹人</div>
+                        <div class="life">
+                            <span class ="Qlabel">生死</span>
+                            <select id="l2">
+                                <option hidden>--選択してください--</option>
+                                <option>生存</option>
+                                <option>死亡</option>
+                            </select>
+                        </div>
+                        <div class="vote">
+                            <span class ="Qlabel">投票</span>
+                            <select id="v2">
+                                <option hidden>--選択してください--</option>
+                                <option>花見</option>
+                                <option>鳥見</option>
+                                <option>風見</option>
+                                <option>月見</option>
+                                <option>校長</option>
+                                <option>生徒Ａ</option>
+                            </select>
+                        </div>
+                        <div class="faith">
+                            <span class ="Qlabel">崇拝</span>
+                            <select id="f2">
+                                <option hidden>--選択してください--</option>
+                                <option>花見</option>
+                                <option>風見</option>
+                                <option>月見</option>
+                                <option>校長</option>
+                                <option>生徒Ａ</option>
+                                <option>無信仰</option>
+                            </select>
+                        </div>
+                        <div class="holy">
+                            <span class ="Qlabel">聖水</span>
+                            <select id="h2">
+                                <option hidden>--選択してください--</option>
+                                <option>飲んだ</option>
+                                <option>飲んでいない</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form">
+                        <div class="nameLabel">〇PC3_風見れおな</div>
+                        <div class="life">
+                            <span class ="Qlabel">生死</span>
+                            <select id="l3">
+                                <option hidden>--選択してください--</option>
+                                <option>生存</option>
+                                <option>死亡</option>
+                            </select>
+                        </div>
+                        <div class="vote">
+                            <span class ="Qlabel">投票</span>
+                            <select id="v3">
+                                <option hidden>--選択してください--</option>
+                                <option>花見</option>
+                                <option>鳥見</option>
+                                <option>風見</option>
+                                <option>月見</option>
+                                <option>校長</option>
+                                <option>生徒Ａ</option>
+                            </select>
+                        </div>
+                        <div class="faith">
+                            <span class ="Qlabel">崇拝</span>
+                            <select id="f3">
+                                <option hidden>--選択してください--</option>
+                                <option>花見</option>
+                                <option>鳥見</option>
+                                <option>月見</option>
+                                <option>校長</option>
+                                <option>生徒Ａ</option>
+                                <option>無信仰</option>
+                            </select>
+                        </div>
+                        <div class="holy">
+                            <span class ="Qlabel">聖水</span>
+                            <select id="h3">
+                                <option hidden>--選択してください--</option>
+                                <option>飲んだ</option>
+                                <option>飲んでいない</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form">
+                        <div class="nameLabel">〇PC4_月見ベルフェゴール</div>
+                        <div class="life">
+                            <span class ="Qlabel">生死</span>
+                            <select id="l4">
+                                <option hidden>--選択してください--</option>
+                                <option>生存</option>
+                                <option>死亡</option>
+                            </select>
+                        </div>
+                        <div class="vote">
+                            <span class ="Qlabel">投票</span>
+                            <select id="v4">
+                                <option hidden>--選択してください--</option>
+                                <option>花見</option>
+                                <option>鳥見</option>
+                                <option>風見</option>
+                                <option>月見</option>
+                                <option>校長</option>
+                                <option>生徒Ａ</option>
+                            </select>
+                        </div>
+                        <div class="faith">
+                            <span class ="Qlabel">崇拝</span>
+                            <select id="f4">
+                                <option hidden>--選択してください--</option>
+                                <option>花見</option>
+                                <option>鳥見</option>
+                                <option>風見</option>
+                                <option>校長</option>
+                                <option>生徒Ａ</option>
+                                <option>無信仰</option>
+                            </select>
+                        </div>
+                        <div class="holy">
+                            <span class ="Qlabel">聖水</span>
+                            <select id="h4">
+                                <option hidden>--選択してください--</option>
+                                <option>飲んだ</option>
+                                <option>飲んでいない</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form">
+                        <div class="nameLabel">〇校長</div>
+                        <div class="life">
+                            <span class ="Qlabel">生死</span>
+                            <select id="l5">
+                                <option hidden>--選択してください--</option>
+                                <option>生存</option>
+                                <option>死亡</option>
+                            </select>
+                        </div>
+                        <div class="holy">
+                            <span class ="Qlabel">聖水</span>
+                            <select id="h5">
+                                <option hidden>--選択してください--</option>
+                                <option>飲んだ</option>
+                                <option>飲んでいない</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form">
+                        <div class="nameLabel">〇生徒Ａ</div>
+                        <div class="life">
+                            <span class ="Qlabel">生死</span>
+                            <select id="l6">
+                                <option hidden>--選択してください--</option>
+                                <option>生存</option>
+                                <option>死亡</option>
+                            </select>
+                        </div>
+                        <div class="holy">
+                            <span class ="Qlabel">聖水</span>
+                            <select id="h6">
+                                <option hidden>--選択してください--</option>
+                                <option>飲んだ</option>
+                                <option>飲んでいない</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    
+                </div>
+                <button id="btn1">エンディングに進む</button>
+                <p class="space"></p>
+            </div>
+
+            <div id = "phase1">
+                <h1>＜phase1：私刑＞</h1>
+                <div class="endText"> 
+                    <p class = "red">※エンディングテキストは、一部を除いて省略しております。</p>
+                    <br>
+                    <br>
+                    <p>なんと、<span class = "goukaTargets">（【業火】の対象）</span>の体が、黒い炎に包まれ燃え盛っているではないか！</p>
+                    <br>
+                    <p id = "dummyGoukaed"></p>
+                    <p id = "hanamiGoukaed">花見</p>
+                    <p id = "torimiGoukaed">鳥見</p>
+                    <p id = "kazamiGoukaed">風見</p>
+                    <p id = "tsukimiGoukaed">月見</p>
+                    <p id = "kouchouGoukaed">校長</p>
+                    <p id = "muchikoGoukaed">生徒Ａ</p>
+                    <br>
+
+                    <div id = "normalDanzai">
+                    </div>
+
+                    <div id = "burnedDanzai">
+                    </div>
+                </div>
+                <button class="btn2">進む</button>
+                <button class="btn3">戻る</button>
+            </div>
+
+            <div id = "phase2">
+                <h1>＜phase2：審判＞</h1>
+                <div class="endText"> 
+                    <div id = "yesJudge">
+                        <p>※エンディングテキストは、一部を除いて省略</p>
+                        <div id="jomei">
+                            <div id ="soloJomei">
+                                <p>校長「……と言いたいところですが、<span class = "jomeiTargets">（助命の対象）</span>。あなたは私を崇拝してくださっていますね。<br>
+                                    　　　聖職者である私を崇拝するということは、あなたは邪神たり得ないないでしょう。<br>
+                                    　　　よって、あなたに対する処刑は行いません」</p>
+                                <br>
+                            </div>
+                            <div id ="multiJomei">
+                                <p>校長「……と言いたいところですが、<span class = "jomeiTargets">（助命の対象）</span>。あなた方は私を崇拝してくださっていますね。<br>
+                                    　　　聖職者である私を崇拝するということは、あなた方は邪神たり得ないないでしょう。<br>
+                                    　　　よって、あなた方に対する処刑は行いません」</p>
+                                <br>
+                            </div>
+                            <div id ="selfJomei">
+                            </div>
+                            <div id = "executeBreak">
+                            </div>
+                            <div id = "executeContinue">
+                            </div>
+                        </div>
+
+                        <div id="burning">
+                            <p>校長が手を振りかざすと、真っ赤な炎が現れ、<span class = "burnTargets">（処刑の対象）</span>の体を包み込んだ。</p>
+                            <br>
+                            <p id = "dummyBurned"></p>
+                            <p id = "hanamiBurned">花見</p>
+                            <p id = "torimiBurned">鳥見</p>
+                            <p id = "kazamiBurned">風見</p>
+                            <p id = "tsukimiBurned">月見</p>
+                            <p id = "kouchouBurned">校長</p>
+                            <p id = "muchikoBurned">生徒Ａ</p>
+                            <br>
+                            <p><span class = "burnTargets">【処刑】の対象）</span>は強烈な断末魔を残し、息絶えた。大聖堂の床に、黒こげの遺体が横たわる。</p>
+                        </div>
+                    </div>
+
+                    <div id = "noJudge">
+                    </div>
+
+                    
+                </div>
+                <button class="btn2">進む</button>
+                <button class="btn3">戻る</button>
+            </div>
+
+            <div id = "phase3">
+                <h1>＜phase3：復活＞</h1>
+                <div class="endText"> 
+                    <div id = "noResurrect">
+                        <div id = "judge">
+                            <p><span class = "judgeTargetsWith_SAN">（崇拝者</p>
+                            <br>
+                            <p id="dummyJudged"></p>
+                            <p id="hanamiJudged">花見</p>
+                            <p id="torimiJudged">鳥見</p>
+                            <p id="kazamiJudged">風見</p>
+                            <p id="tsukimiJudged">月見</p>
+                            <br>   
+                            <p>校長の手から聖火が放たれる。<span class = "judgeTargets">（崇拝者）</span>の体は無残に焼かれ、そのまま息絶えた。</p>    
+                        </div>
+                        <br>
+                        <br>
+                        <div class ="suicide">
+                            <br>
+                            <p id="dummySuicide"></p>
+                            <div id="hanamiSuicide"><p>花見</p></div>
+                            <div id="torimiSuicide"><p>鳥見</p></div>
+                            <div id="kazamiSuicide"><p>風見</p></div>
+                            <div id="tsukimiSuicide"><p>月見</p></div>
+                        </div>
+                        <br>
+                        <p>◆</p>    
+                        <br>
+                        <br>
+                        <div class = "yesSurviver">
+                            <div class = "soloSurviver">
+                                <p>生存者は、<span class = "survivers">（生存者）</span>のみであった。</p>
+                            </div>
+                            <div class = "multiSurviver">
+                                <p>生存者は、<span class = "survivers">（生存者）</span>であった。</p>
+                            </div>
+                        </div>
+                        <div class = "noSurviver">
+                            <p>――生存者は、誰もいなかった。</p>
+                        </div>
+                        <br>
+                        <br>
+                        <div id ="kouchouDeath">
+                        </div>
+                    </div>
+
+                    <div id = "yesResurrect">
+                        <div id="revive">
+                            <p>◆</p>
+                            <p>邪神が<span class = "revivers">（復活者）</span>に向けて手をかざすと、たちまち息を吹き返した。</p>
+                            <br>
+                            <p id="dummyRevive"></p>
+                            <p id="hanamiRevive">花見</p>
+                            <p id="torimiRevive">鳥見</p>
+                            <p id="kazamiRevive">風見</p>
+                            <p id="tsukimiRevive">月見</p>
+                            <br>   
+                        </div>    
+                        <div id="believe">
+                            <p>邪神の復活を目の当たりにした<span class = "believers">（崇拝者）</span>は床に跪き、忠誠の言葉を述べる。</p>
+                            <br>
+                            <p id="dummyBelieve"></p>
+                            <p id="hanamiBelieve">花見</p>
+                            <p id="torimiBelieve">鳥見</p>
+                            <p id="kazamiBelieve">風見</p>
+                            <p id="tsukimiBelieve">月見</p>
+                            <br>   
+                            <p class = "soloBeliever"></p>
+                            <p class = "multiBeliever">邪神</p>
+                            <br>
+                        </div>
+                        <p>◆</p>
+                        <br>   
+                        <br>
+                        <div id="believe2">
+                            <p class = "soloBeliever"></p>   
+                            <br>
+                            <p class = "multiBeliever"></p>   
+                            <br>
+                            <div class ="suicide">
+                                <br>
+                                <p id="dummySuicide"></p>
+                                <div id="hanamiSuicide"><p>花見</p></div>
+                                <div id="torimiSuicide"><p>鳥見</p></div>
+                                <div id="kazamiSuicide"><p>風見</p></div>
+                                <div id="tsukimiSuicide"><p>月見</p></div>
+                            </div>
+                        </div>
+                        <br>
+                        <p>◆</p>    
+                        <br>
+                        <br>
+                        <div class = "yesSurviver">
+                            <div class = "soloSurviver">
+                                <p>生存者は、<span class = "survivers">（生存者）</span>のみであった。</p>
+                            </div>
+                            <div class = "multiSurviver">
+                                <p>生存者は、<span class = "survivers">（生存者）</span>であった。</p>
+                            </div>
+                        </div>
+                        <div class = "noSurviver">
+                        </div>
+                    </div>
+
+                    
+                </div>
+                <button class="btn2">進む</button>
+                <button class="btn3">戻る</button>
+            </div>
+            
+
+            <div id = "results">
+                <div class = "center">
+                    <h2>[Results]</h2>
+                    <div id ="scoreChart">
+                        <div id = "centerContainer">
+                            <p id = "dammyResult"><span id="name0"></span><span class="score"></span></p>
+                            <p id = "hanamiResult"><span id="name1">花見：</span>（<span class="score">スコア</span>）</p>
+                            <p id = "torimiResult"><span id="name2">鳥見：</span>（<span class="score">スコア</span>）</p>
+                            <p id = "kazamiResult"><span id="name3">風見：</span>（<span class="score">スコア</span>）</p>
+                            <p id = "tsukimiResult"><span id="name4">月見：</span>（<span class="score">スコア</span>）</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="normalResult">
+                    <p>今回のMVP（最大スコア獲得者）は、<span class="MVP">（優勝者）</span>です！ おめでとうございます！！</p>
+                </div>
+                <div id="allDeathResult">
+                </div>
+                <button class="btn3">戻る</button>
+            </div>
+
+            </div>
+            
+        </main>
+
+        </div>
+
+    <footer>© 2023 </footer>
+    </div>
+</body>
+</html>
